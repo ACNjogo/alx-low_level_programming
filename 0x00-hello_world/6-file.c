@@ -1,8 +1,10 @@
 #include <stdio.h>
+/*
+ *printf stuff with types
+ */
 
 int main(void)
 {
-	/*more printf stuff*/
 	printf("Size of a char: %d byte(s) \n", sizeof(char));
 	printf("Size of an int: %d byte(s) \n", sizeof(int));
 	printf("Size of a long: %d byte(s) \n", sizeof(long));
