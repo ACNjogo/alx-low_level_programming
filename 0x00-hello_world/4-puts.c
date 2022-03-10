@@ -1,6 +1,7 @@
 #include <stdio.h>
-/*
- *this bit prints the sentense asked without using printf
+/**
+ *main - entry point
+ *Return: always 0
 */
 int main(void)
 {
