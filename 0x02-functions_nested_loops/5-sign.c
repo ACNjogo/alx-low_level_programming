@@ -16,7 +16,8 @@ else if (i == 0)
 _putchar('0');
 }
 else
-{_putchar('-');
+{
+_putchar('-');
 return (-1);
 }
 }
