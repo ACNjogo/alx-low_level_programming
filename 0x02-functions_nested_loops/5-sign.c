@@ -11,13 +11,10 @@ if (i > 0)
 _putchar('+');
 return (1);
 }
-else if (i == 0)
+if (i == 0)
 {
 _putchar('0');
 }
-else
-{
 _putchar('-');
 return (-1);
-}
 }
