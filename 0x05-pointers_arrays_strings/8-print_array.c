@@ -1,14 +1,19 @@
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_array - function that prints an array
- * @a: function variable
- * @n: number of elements of the array to be printed
- */
+* print_array - prints array
+* @a: pointer of array
+* @n: number of elements in the array
+*/
 void print_array(int *a, int n)
 {
-while (n-- > 0)
-printf(n == 0 ? "%d" : "%d, ", *a++);
-_putchar('\n');
+int i;
+
+for (i = 0; i < n; i++)
+{
+printf("%d", a[i]);
+if (i != n - 1)
+printf(", ");
+}
+printf("\n");
 }
