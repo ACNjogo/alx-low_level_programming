@@ -13,5 +13,5 @@ n++;
 s -= n + 1;
 while (n--)
 _putchar(s[1]);
-_putchar('\n)
+_putchar('\n')
 }
