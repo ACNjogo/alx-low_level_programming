@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
 * _strstr - func that locates substring
 * @haystack: string to locate
