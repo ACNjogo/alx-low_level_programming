@@ -1,20 +1,24 @@
 #include "lists.h"
+
 /**
-* free_listint2 - frees a list but head is null
-* @head: linked list and head
-*
+* free_listint2 - func that frees up list
+* @head: start of list
+* Return: 0
 */
 void free_listint2(listint_t **head)
 {
 listint_t *tmp;
+listint_t *current;
 
-if (head == NULL)
-return;
-while (*head != NULL)
+if (head != NULL)
 {
-tmp = *head;
-free(*head);
-*head = tmp->next;
+current = *head;
+while ((tmp = current) != NULL)
+{
+current = current->next;
+free(tmp);
 }
 *head = NULL;
 }
+}
+

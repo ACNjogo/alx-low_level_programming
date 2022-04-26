@@ -1,20 +1,28 @@
 #include "lists.h"
+
 /**
-* pop_listint - pops a node out
-* @head: linked list address
-* Return: head node data
+* pop_listint - func that pops
+* @head: start of list
+* Return: popped var
 */
 int pop_listint(listint_t **head)
 {
-int value = 0;
-listint_t *tmp;
+int head_node;
+listint_t *h;
+listint_t *current;
 
 if (*head == NULL)
-return (value);
-tmp = *head;
-value = tmp->n;
-free(*head);
-*head = tmp->next;
+return (0);
 
-return (value);
+current = *head;
+
+head_node = current->n;
+
+h = current->next;
+
+free(current);
+
+*head = h;
+
+return (head_node);
 }
