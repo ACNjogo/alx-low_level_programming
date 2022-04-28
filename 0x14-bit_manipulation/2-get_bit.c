@@ -14,3 +14,4 @@ if (index > 32)
 return (-1);
 return (n >> index & 1);
 }
+
